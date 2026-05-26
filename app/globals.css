@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ─────────────────────────────── */
+:root {
+  --blue:    #0F3D91;
+  --orange:  #F47C20;
+  --charcoal:#1B1B1B;
+}
+
+/* ─── Base ──────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff;
+  color: #2D2D2D;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: #F47C20; color: #fff; }
+
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: #1B1B1B; }
+::-webkit-scrollbar-thumb { background: #F47C20; border-radius: 4px; }
+
+/* ─── Utility classes ───────────────────────────── */
+@layer utilities {
+
+  /* Gradient text helpers */
+  .text-gradient-orange {
+    background: linear-gradient(130deg, #F47C20, #FFB347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-blue {
+    background: linear-gradient(130deg, #0F3D91, #1A52B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass surfaces */
+  .glass {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.11);
+  }
+  .glass-dark {
+    background: rgba(27,27,27,0.88);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  /* Shimmer skeleton */
+  .shimmer-bg {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2.2s linear infinite;
+  }
+
+  /* Marquee track (must be double-width content) */
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 32s linear infinite;
+  }
+}
+
+/* ─── Keyframe bank (mirrors Tailwind config) ───── */
+@keyframes fadeUp {
+  0%   { opacity:0; transform:translateY(36px); }
+  100% { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeLeft {
+  0%   { opacity:0; transform:translateX(-36px); }
+  100% { opacity:1; transform:translateX(0); }
+}
+@keyframes fadeRight {
+  0%   { opacity:0; transform:translateX(36px); }
+  100% { opacity:1; transform:translateX(0); }
+}
+@keyframes pulsGlow {
+  0%,100% { box-shadow:0 0 0 0 rgba(244,124,32,.45); }
+  70%     { box-shadow:0 0 0 14px rgba(244,124,32,0); }
+}
+@keyframes floatY {
+  0%,100% { transform:translateY(0); }
+  50%     { transform:translateY(-10px); }
+}
+@keyframes marquee {
+  0%   { transform:translateX(0); }
+  100% { transform:translateX(-50%); }
+}
+@keyframes shimmer {
+  0%   { background-position:-200% 0; }
+  100% { background-position:200% 0; }
+}
+@keyframes spinSlow {
+  from { transform:rotate(0deg); }
+  to   { transform:rotate(360deg); }
+}
+@keyframes borderPulse {
+  0%,100% { border-color:rgba(244,124,32,0.3); }
+  50%     { border-color:rgba(244,124,32,0.8); }
+}
+@keyframes counterPop {
+  0%   { transform:scale(0.7); opacity:0; }
+  60%  { transform:scale(1.08); }
+  100% { transform:scale(1); opacity:1; }
+}
+
+/* ─── Card hover lift ───────────────────────────── */
+.card-hover {
+  transition: transform 0.32s cubic-bezier(.22,.68,0,1.2),
+              box-shadow 0.32s ease,
+              border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.10);
+}
