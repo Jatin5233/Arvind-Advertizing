@@ -9,7 +9,7 @@ const BADGES = [
   { Icon: Clock,    label: "Timely Delivery" },
 ];
 
-const TICKER = ["Paper Printing","UV Printing","Sign Boards","Event Branding","Flex Printing"];
+const TICKER = ["Flex Printing","UV Printing","Digital Paper Printing","Sign Boards","Event Branding"];
 
 export default function HeroSection() {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -30,7 +30,7 @@ export default function HeroSection() {
         ref={bgRef}
         className="absolute inset-[-20%] will-change-transform"
         style={{
-          backgroundImage:"url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop')",
+          backgroundImage:"url('/printing-branding-services-arvind-advertizing-delhi.png')",
           backgroundSize:"cover", backgroundPosition:"center",
         }}
       />
@@ -90,7 +90,7 @@ export default function HeroSection() {
                            hover:shadow-2xl hover:shadow-orange-500/35">
             Get Free Quote
           </Link>
-          <a href="https://wa.me/919999999999" target="_blank" rel="noopener"
+          <a href="https://wa.me/919810718141" target="_blank" rel="noopener"
              className="px-9 py-4 border-2 border-white/30 text-white font-bold
                         rounded-full text-base hover:bg-white hover:text-brand-charcoal
                         transition-all duration-200 hover:-translate-y-1

@@ -4,9 +4,14 @@ import AnimatedSection from "../components/AnimatedSection";
 import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Machinery – Advanced Printing Equipment & Technology",
-  description:
-    "Explore Arvind Advertizing's state-of-the-art printing machinery — UV flatbed printers, wide-format flex printers, digital offset, laser cutting, and more.",
+  title: "Our Machinery – Industrial Printing Equipment | Arvind Advertizing",
+  description: "State-of-the-art UV flatbed, solvent, latex and offset printing machinery for high-quality output.",
+  alternates: { canonical: "https://yourdomain.com/machinery" },
+  openGraph: {
+    title: "Printing Machinery – Arvind Advertizing",
+    url: "https://yourdomain.com/machinery",
+    images: [{ url: "/og/machinery.jpg", width: 1200, height: 630, alt: "Industrial Printing Machinery" }],
+  },
 };
 
 const MACHINES = [
@@ -21,7 +26,7 @@ const MACHINES = [
     "Printing speed: Up to 60㎡/h",
     "UV flatbed direct printing"
   ],
-  img: "https://www.docanuv.com/printers/flatbed/H1000",
+  img: "printing-branding-services-arvind-advertizing-delhi.png",
   badge: ""
 },
  {
@@ -35,7 +40,7 @@ const MACHINES = [
     "Printing speed: 85 sqm/hr",
     "Compatible materials: Vinyl, flex, backlit film, transparent film"
   ],
-  img: "https://www.witcolor.com/product/",
+  img: "uv-roll-to-roll-printer-vinyl-sav-printing-delhi.webp",
   badge: ""
 },
   {
@@ -50,7 +55,7 @@ const MACHINES = [
     "Color accuracy: ±0.1 mm",
 , 
   ],
-  img: "https://en.gongzheng.com/productInfo/10126.html",
+  img: "starfire-solvent-printer-flex-banner-printing.jpg",
   badge: ""
 },
   {
@@ -64,7 +69,7 @@ const MACHINES = [
     "Compatible materials: Flex, vinyl, backlit, star flex, film",
     "Printing speed: Up to 234㎡/h",
   ],
-  img: "https://en.gongzheng.com/product/10117.html",
+  img: "starfire-c-series-printer-arvind-advertizing.webp",
   badge: ""
 },
   {
@@ -78,7 +83,7 @@ const MACHINES = [
       "Printing speed: Up to 91 sqm/hr",
       "Suitable for Vinyl, flex, canvas, wallpaper, fabric"
     ],
-    img: "https://support.hp.com/in-en/product/details/hp-latex-570-printer/10722009",
+    img: "hp-latex-printer-flex-printing-machine-arvind.png",
     badge: ""
 },
  
@@ -94,7 +99,7 @@ const MACHINES = [
     "Print speed: Up to 41 sqm/hr",
     "Suitable for Vinyl, flex, one way vision, photo paper"
   ],
-  img: "https://mutoh.com/product-category/printers/",
+  img: "mutoh-eco-solvent-printer-vinyl-printing-delhi.webp",
   badge: ""
 },
 {
@@ -108,7 +113,7 @@ const MACHINES = [
     "Speed: Up to 100 pages/min",
     "Suitable for Photo, stickers, brochures, packaging & catalogs"
   ],
-  img: "https://www.konicaminolta.in/business/WP/en/printing-solutions/production-print/bizhub-press-c6100/index.html",
+  img: "offset-press-machine-commercial-printing-india.jpg",
   badge: ""
 },
   {
@@ -121,7 +126,7 @@ const MACHINES = [
     "Automatic contour detection for printed graphics",
     "Suitable for paper, vinyl, stickers, labels & packaging"
   ],
-  img: "https://www.graphteccorp.com/craftrobo/",
+  img: "vinyl-cutting-plotter-machine-sign-making-delhi.jpeg",
   badge: ""
 },
   {
@@ -134,7 +139,7 @@ const MACHINES = [
     "Adjustable temperature, speed control & water resistance",
     "Suitable for Paper, photo paper, vinyl, posters, menus, photo prints & packaging"
   ],
-  img: "https://www.neoltfactory.com/en/laminators/",
+  img: "thermal-lamination-machine-paper-finishing-delhi.webp",
   badge: ""
 }
  

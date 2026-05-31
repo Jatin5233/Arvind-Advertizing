@@ -5,9 +5,14 @@ import Counter from "../components/Counter";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us – 15+ Years of Printing & Branding Excellence",
-  description:
-    "Learn about Arvind Advertizing — India's trusted printing and branding partner with 15+ years of experience, serving 800+ clients across 120+ cities.",
+  title: "About Us – Arvind Advertizing",
+  description: "Learn about Arvind Advertizing – decades of printing and branding experience across India.",
+  alternates: { canonical: "https://yourdomain.com/about" },
+  openGraph: {
+    title: "About Arvind Advertizing",
+    url: "https://yourdomain.com/about",
+    images: [{ url: "/og/about.jpg", width: 1200, height: 630, alt: "About Arvind Advertizing" }],
+  },
 };
 
 const STATS = [
@@ -149,43 +154,121 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-24 lg:py-32 bg-[#F8F9FB]">
-        <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <AnimatedSection className="text-center max-w-xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
-                             bg-brand-blue/10 text-brand-blue text-sm font-semibold mb-5">
-              The Team
-            </span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-brand-charcoal mb-4">
-              Meet the People Behind Our Work
-            </h2>
-            <p className="text-gray-500">
-              Experienced professionals committed to delivering excellence across every project.
-            </p>
-          </AnimatedSection>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-7">
-            {TEAM.map((member, i) => (
-              <AnimatedSection key={member.name} delay={i * 90}>
-                <div className="group text-center bg-white rounded-2xl p-6
-                                shadow-sm border border-gray-100 hover:shadow-xl
-                                hover:border-brand-orange/20 card-hover">
-                  <div className="relative inline-block mb-4">
-                    <img src={member.img} alt={member.name}
-                         className="w-20 h-20 rounded-2xl object-cover mx-auto
-                                    group-hover:scale-105 transition-transform duration-300" />
-                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500
-                                    rounded-full border-2 border-white" />
-                  </div>
-                  <h4 className="font-display font-bold text-brand-charcoal text-base mb-1">
-                    {member.name}
-                  </h4>
-                  <p className="text-gray-500 text-sm">{member.role}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+ <section className="py-24 lg:py-32 bg-[#F8F9FB]">
+  <div className="max-w-6xl mx-auto px-5 lg:px-8">
+
+    {/* Heading */}
+    <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
+      <span
+        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                   bg-brand-blue/10 text-brand-blue text-sm font-semibold mb-5"
+      >
+        Leadership
+      </span>
+
+      <h2
+        className="font-display text-3xl lg:text-5xl font-bold
+                   text-brand-charcoal mb-5"
+      >
+        Meet Our Founder
+      </h2>
+
+      <p className="text-gray-500 text-base lg:text-lg leading-relaxed">
+        Driving creativity, quality, and innovation in every project
+        delivered by Arvind Advertizing.
+      </p>
+    </AnimatedSection>
+
+    {/* Owner Card */}
+    <AnimatedSection>
+      <div
+        className="bg-white rounded-3xl shadow-xl shadow-gray-100
+                   border border-gray-100 overflow-hidden"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+
+          {/* Image */}
+          <div className="relative h-full min-h-[350px]">
+            <img
+              src="/owner.jpg"   // replace with your image path
+              alt="Founder"
+              className="w-full h-full object-cover"
+            />
+
+            <div
+              className="absolute top-5 left-5 px-4 py-1.5 rounded-full
+                         bg-white/90 backdrop-blur text-sm font-semibold
+                         text-brand-charcoal shadow"
+            >
+              Founder & Director
+            </div>
           </div>
+
+          {/* Content */}
+          <div className="p-8 lg:p-14">
+
+            <h3
+              className="font-display text-3xl lg:text-4xl
+                         font-bold text-brand-charcoal mb-3"
+            >
+              Mr. Arvind
+            </h3>
+
+            <p className="text-brand-orange font-semibold mb-6">
+              Founder of Arvind Advertizing
+            </p>
+
+            <p className="text-gray-600 leading-relaxed mb-6">
+              With years of expertise in branding, printing, and visual
+              advertising solutions, Mr. Arvind has built Arvind Advertizing
+              into a trusted name for businesses across Delhi and beyond.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed mb-8">
+              His vision focuses on delivering premium quality, timely
+              execution, and long-term client relationships through innovative
+              advertising solutions.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-5">
+
+              <div className="bg-[#F8F9FB] rounded-2xl p-5 text-center">
+                <h4 className="text-2xl font-bold text-brand-orange mb-1">
+                  15+
+                </h4>
+                <p className="text-sm text-gray-500">
+                  Years Experience
+                </p>
+              </div>
+
+              <div className="bg-[#F8F9FB] rounded-2xl p-5 text-center">
+                <h4 className="text-2xl font-bold text-brand-orange mb-1">
+                  2500+
+                </h4>
+                <p className="text-sm text-gray-500">
+                  Projects Delivered
+                </p>
+              </div>
+
+              <div className="bg-[#F8F9FB] rounded-2xl p-5 text-center">
+                <h4 className="text-2xl font-bold text-brand-orange mb-1">
+                  100%
+                </h4>
+                <p className="text-sm text-gray-500">
+                  Client Focused
+                </p>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </AnimatedSection>
+
+  </div>
+</section>
     </>
   );
 }
