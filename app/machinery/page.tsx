@@ -6,10 +6,10 @@ import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Our Machinery – Industrial Printing Equipment | Arvind Advertizing",
   description: "State-of-the-art UV flatbed, solvent, latex and offset printing machinery for high-quality output.",
-  alternates: { canonical: "https://yourdomain.com/machinery" },
+  alternates: { canonical: "https://arvindadvertizing.com/machinery" },
   openGraph: {
     title: "Printing Machinery – Arvind Advertizing",
-    url: "https://yourdomain.com/machinery",
+    url: "https://arvindadvertizing.com/machinery",
     images: [{ url: "/og/machinery.jpg", width: 1200, height: 630, alt: "Industrial Printing Machinery" }],
   },
 };

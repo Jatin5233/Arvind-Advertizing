@@ -7,10 +7,10 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us – Arvind Advertizing",
   description: "Learn about Arvind Advertizing – decades of printing and branding experience across India.",
-  alternates: { canonical: "https://yourdomain.com/about" },
+  alternates: { canonical: "https://arvindadvertizing.com/about" },
   openGraph: {
     title: "About Arvind Advertizing",
-    url: "https://yourdomain.com/about",
+    url: "https://arvindadvertizing.com/about",
     images: [{ url: "/og/about.jpg", width: 1200, height: 630, alt: "About Arvind Advertizing" }],
   },
 };
@@ -25,7 +25,7 @@ const STATS = [
 const HIGHLIGHTS = [
   "ISO-Standard Production Facility",
   "In-House Design Team",
-  "Dedicated Account Managers",
+  "Fast Turn around and Timely Delivery",
   "Advanced UV, Flex & Digital Printing Technology",
    "PAN India Logistics Network",
 ];
@@ -71,17 +71,12 @@ export default function AboutPage() {
             {/* Images */}
             <AnimatedSection direction="left">
               <div className="relative">
-                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=700&h=540&fit=crop"
+                <img src="/company.png"
                      alt="Arvind Advertizing Production Facility"
                      className="rounded-3xl shadow-2xl shadow-gray-200 w-full" />
-                {/* Secondary image */}
-                <div className="absolute -bottom-8 -right-8 w-[56%] rounded-2xl overflow-hidden
-                                border-4 border-white shadow-2xl shadow-gray-200">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=320&fit=crop"
-                       alt="Printing Machinery" className="w-full h-full object-cover" />
-                </div>
+               
                 {/* Experience badge */}
-                <div className="absolute -top-5 -left-5 w-28 h-28 bg-brand-orange rounded-full
+                <div className="absolute -top-12 -left-12 w-28 h-28 bg-brand-orange rounded-full
                                 flex flex-col items-center justify-center
                                 shadow-xl shadow-orange-500/35">
                   <span className="font-display text-3xl font-black text-white leading-none">15+</span>
@@ -190,7 +185,7 @@ export default function AboutPage() {
           {/* Image */}
           <div className="relative h-full min-h-[350px]">
             <img
-              src="/owner.jpg"   // replace with your image path
+              src="/owner.png"   // replace with your image path
               alt="Founder"
               className="w-full h-full object-cover"
             />

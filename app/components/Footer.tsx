@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/about",     label: "About Us" },
   { href: "/services",  label: "Services" },
   { href: "/machinery", label: "Machinery" },
+  { href: "/#clients",  label: "Our Clients" },
   { href: "/#contact",  label: "Contact" },
 ];
 
@@ -32,15 +33,33 @@ export default function Footer() {
               India's Leading Printing & Branding manufacturing company specializing in Flex Printing, Digital Paper printing, UV Printing, Sign Boards, Event Branding, and Commercial Branding Across India.
             </p>
             <div className="flex gap-3">
-              {[Instagram, Linkedin].map((Icon, i) => (
-                <a key={i} href="#"
-                   className="w-9 h-9 border border-white/12 rounded-lg flex items-center
-                              justify-center text-white/45 hover:bg-brand-orange
-                              hover:border-brand-orange hover:text-white transition-all duration-200">
-                  <Icon size={15} />
-                </a>
-              ))}
-            </div>
+  {[
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/arvindadvertizingindia/",
+    },
+    {
+      Icon: Linkedin,
+      href: "https://www.linkedin.com/company/arvind-advertizing-india/posts/?feedView=all",
+    },
+    {
+      Icon: Phone,
+      href: "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
+    },
+  ].map(({ Icon, href }, i) => (
+    <a
+      key={i}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-9 h-9 border border-white/12 rounded-lg flex items-center
+                 justify-center text-white/45 hover:bg-brand-orange
+                 hover:border-brand-orange hover:text-white transition-all duration-200"
+    >
+      <Icon size={15} />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* Services */}

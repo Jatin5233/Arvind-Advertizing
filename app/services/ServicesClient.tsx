@@ -16,13 +16,13 @@ const SERVICES = [
     icon: Sun,
     title: "UV Printing",
     desc: "High-resolution UV flatbed printing directly on acrylic, wood, glass, metal, PVC, leather, and more. UV roll-to-roll printing on SAV, OWV-Vinyls, PU & PVC. Perfect for premium interior branding, corporate gifts, and architectural signage.",
-    features: ["Print on 40+ surfaces", "600 DPI resolution", "White ink & varnish effects", "No minimum order", "Scratch-resistant output"],
+    features: ["Print on 40+ surfaces", "1440 DPI resolution", "White ink & varnish effects", "No minimum order", "Scratch-resistant output"],
     images: [
-      "/uv-printing/uv-flatbed-printing-retail-shelf-branding-delhi.jpg",
+      "/uv-printing/uv1.png",
       "/uv-printing/uv-printed-packaging-box-food-brand-india.jpg",
       "/uv-printing/uv-printing-cylindrical-object-customized-gift-delhi.jpg",
       "/uv-printing/uv-printing-menu-card-acrylic-arvind-advertizing.jpg",
-      "/uv-printing/uv-printing-outdoor-directional-signage-delhi.jpg",
+      "/uv-printing/uv-printing-trophy-sticker-branding-arvind-delhi.jpg",
     ],
   },
   {
@@ -40,7 +40,7 @@ const SERVICES = [
   },
   {
     icon: Printer,
-    title: "Flex Printing",
+    title: "Flex and Vinyl Printing",
     desc: "Indoor and outdoor flex & vinyl banners, hoardings and print solutions. We use starfire-solvent, eco-solvent and latex inks on premium quality flex and vinyl to deliver vibrant colors and weather resistant outputs.",
     features: ["Single-side & double-side flex/vinyl", "Backlit & frontlit options", "Star & Taiwan flex material", "Self-adhesive, One way vision Vinyl", "UV-resistant inks"],
     images: [
@@ -53,13 +53,15 @@ const SERVICES = [
   },
   {
     icon: FileText,
-    title: "Paper Printing",
+    title: "Digital Paper Printing",
     desc: "Premium offset and digital printing for all corporate stationery and marketing collateral — with 50+ paper stocks and finishes available.",
     features: ["Business cards & letterheads", "Brochures & catalogues", "Booklets, Calendars & diaries", "Packaging & boxes", "Danglers & TentCards", "UV / aqueous coating"],
     images: [
-      "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
+      "/paper-printing/business-card-premium-offset-printing-delhi.webp",
+  "/paper-printing/brochure-catalogue-offset-printing-arvind-advertizing.jpg",
+  "/paper-printing/letterhead-corporate-stationery-printing-delhi.jpg",
+  "/paper-printing/packaging-box-marketing-collateral-printing-india.jpg",
+  "/paper-printing/price-tag-dangler-retail-promotional-printing-delhi.png",
     ],
   },
   {
@@ -91,6 +93,8 @@ const SERVICES = [
 ],
   },
 ] as const;
+
+
 
 /* ── Slideshow component ── */
 function ServiceSlideshow({ images, title }: { images: readonly string[]; title: string }) {
