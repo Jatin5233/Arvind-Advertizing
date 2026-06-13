@@ -3,7 +3,7 @@ import { SERVICES } from "./components/service-data";
 import { BLOG_POSTS } from "./blog/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://arvindadvertizing.com";
+  const baseUrl = "https://www.arvindadvertizing.com";
 
   /* ── Static pages ── */
   const staticPages: MetadataRoute.Sitemap = [
