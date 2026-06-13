@@ -2,15 +2,9 @@
 /**
  * Counter
  * ───────
- * Animates a number from 0 → target using an ease-out cubic curve.
- * Starts only when the element scrolls into view.
- *
- * Props
- * ─────
- * target    number   – end value
- * suffix    string   – appended after number, e.g. "+"  (default "+")
- * duration  number   – animation length in ms            (default 2000)
- * className string   – forwarded to the wrapping <span>
+ * Animates a number from target → target (visually from 0 → target).
+ * Renders the FINAL number in the initial HTML for SEO (Google sees the real value).
+ * The animation is purely visual — starts when scrolled into view.
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -28,13 +22,22 @@ export default function Counter({
   duration = 2000,
   className = "",
 }: Props) {
-  const [display, setDisplay]   = useState(0);
+  /* Start with the actual target value (SSR-safe — Google indexes this) */
+  const [display, setDisplay]   = useState(target);
   const [started, setStarted]   = useState(false);
   const [visible, setVisible]   = useState(false);
+  const [mounted, setMounted]   = useState(false);
   const spanRef = useRef<HTMLSpanElement>(null);
+
+  /* Mark as client-mounted, then reset to 0 for animation */
+  useEffect(() => {
+    setMounted(true);
+    setDisplay(0);
+  }, []);
 
   /* ── trigger on viewport entry ── */
   useEffect(() => {
+    if (!mounted) return;
     const el = spanRef.current;
     if (!el) return;
     const io = new IntersectionObserver(
@@ -43,7 +46,7 @@ export default function Counter({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [mounted]);
 
   /* ── count-up animation ── */
   useEffect(() => {

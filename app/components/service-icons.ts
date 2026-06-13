@@ -9,6 +9,6 @@ export const SERVICE_ICONS: Record<string, LucideIcon> = {
   "sign-boards":        Square,
   "event-branding":     Calendar,
   "paper-printing":     FileText,
-  "digita-paper-printing": FileText,
+  "digital-paper-printing": FileText,
   "corporate-branding": Building2,
 };

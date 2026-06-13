@@ -5,14 +5,62 @@ import Counter from "../components/Counter";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us – Arvind Advertizing",
-  description: "Learn about Arvind Advertizing – decades of printing and branding experience across India.",
+  title: "About Us – 15+ Years of Printing & Branding Excellence",
+  description: "Arvind Advertizing has 15+ years of printing & branding expertise, 2500+ projects completed, 800+ happy clients across 120+ cities in India. Learn about our journey, team & advanced production facility.",
   alternates: { canonical: "https://arvindadvertizing.com/about" },
   openGraph: {
-    title: "About Arvind Advertizing",
+    title: "About Arvind Advertizing – India's Trusted Printing Partner",
+    description: "15+ years of printing & branding excellence across India. 2500+ projects, 800+ clients.",
     url: "https://arvindadvertizing.com/about",
-    images: [{ url: "/og/about.jpg", width: 1200, height: 630, alt: "About Arvind Advertizing" }],
+    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "About Arvind Advertizing – Printing and Branding Company Delhi" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Arvind Advertizing – 15+ Years of Excellence",
+    description: "India's trusted printing partner. 2500+ projects, 800+ clients across 120+ cities.",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://arvindadvertizing.com/#organization",
+  name: "Arvind Advertizing",
+  url: "https://arvindadvertizing.com",
+  logo: "https://arvindadvertizing.com/icon.webp",
+  description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
+  foundingDate: "2011",
+  founder: {
+    "@type": "Person",
+    name: "Mr. Arvind",
+    jobTitle: "Founder & Director",
+  },
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    minValue: 10,
+    maxValue: 50,
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "A1 22-A, Pusta Road, NH-709, Pillar No-157, Bhajanpura",
+    addressLocality: "Delhi",
+    addressRegion: "Delhi",
+    postalCode: "110053",
+    addressCountry: "IN",
+  },
+  sameAs: [
+    "https://www.instagram.com/arvindadvertizingindia/",
+    "https://www.linkedin.com/company/arvind-advertizing",
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
+    { "@type": "ListItem", position: 2, name: "About Us", item: "https://arvindadvertizing.com/about" },
+  ],
 };
 
 const STATS = [
@@ -40,6 +88,8 @@ const TEAM = [
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="relative py-36 bg-brand-charcoal overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/60 to-brand-charcoal/95" />
@@ -71,7 +121,7 @@ export default function AboutPage() {
             {/* Images */}
             <AnimatedSection direction="left">
               <div className="relative">
-                <img src="/company.png"
+                <img src="/company.webp"
                      alt="Arvind Advertizing Production Facility"
                      className="rounded-3xl shadow-2xl shadow-gray-200 w-full" />
                
@@ -185,8 +235,8 @@ export default function AboutPage() {
           {/* Image */}
           <div className="relative h-full min-h-[350px]">
             <img
-              src="/owner.png"   // replace with your image path
-              alt="Founder"
+              src="/owner.webp"
+              alt="Mr. Arvind - Founder and Director of Arvind Advertizing Delhi"
               className="w-full h-full object-cover"
             />
 

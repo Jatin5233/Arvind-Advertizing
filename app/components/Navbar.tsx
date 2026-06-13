@@ -11,6 +11,7 @@ const NAV = [
   { href: "/services",  label: "Services", hasDropdown: true },
   { href: "/machinery", label: "Machinery" },
   { href: "/about",     label: "About" },
+  { href: "/blog",      label: "Blog" },
    { href: "/#clients",  label: "Our Clients" }, 
   { href: "/#contact",  label: "Contact" },
   
@@ -58,7 +59,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" ref={panelRef}>
+        <nav className="hidden md:flex items-center gap-8" ref={panelRef} aria-label="Main navigation">
           {NAV.map((l) => {
             const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href) && l.href !== "/";
 

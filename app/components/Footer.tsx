@@ -10,13 +10,14 @@ const LINKS = [
   { href: "/about",     label: "About Us" },
   { href: "/services",  label: "Services" },
   { href: "/machinery", label: "Machinery" },
+  { href: "/blog",      label: "Blog" },
   { href: "/#clients",  label: "Our Clients" },
   { href: "/#contact",  label: "Contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-charcoal relative overflow-hidden">
+    <footer className="bg-brand-charcoal relative overflow-hidden" aria-label="Site footer">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px]
                       bg-brand-blue/10 blur-[110px] rounded-full pointer-events-none" />
 
@@ -37,21 +38,25 @@ export default function Footer() {
     {
       Icon: Instagram,
       href: "https://www.instagram.com/arvindadvertizingindia/",
+      label: "Follow Arvind Advertizing on Instagram",
     },
     {
       Icon: Linkedin,
       href: "https://www.linkedin.com/company/arvind-advertizing-india/posts/?feedView=all",
+      label: "Arvind Advertizing on LinkedIn",
     },
     {
       Icon: Phone,
       href: "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
+      label: "Arvind Advertizing on JustDial",
     },
-  ].map(({ Icon, href }, i) => (
+  ].map(({ Icon, href, label }, i) => (
     <a
       key={i}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={label}
       className="w-9 h-9 border border-white/12 rounded-lg flex items-center
                  justify-center text-white/45 hover:bg-brand-orange
                  hover:border-brand-orange hover:text-white transition-all duration-200"

@@ -34,7 +34,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {SERVICES.map((svc, i) => {
            const Icon = SERVICE_ICONS[svc.slug];
-<Icon size={26} className="text-white" />
+           if (!Icon) return null;
             return (
               <AnimatedSection key={svc.slug} delay={i * 90}>
                 <Link href={`/services/${svc.slug}`} className="block group">

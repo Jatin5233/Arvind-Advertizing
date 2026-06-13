@@ -24,13 +24,13 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden" aria-label="Hero – Bulk Printing and Branding Solutions Across India">
       {/* Parallax bg */}
       <div
         ref={bgRef}
         className="absolute inset-[-20%] will-change-transform"
         style={{
-          backgroundImage:"url('/printing-branding-services-arvind-advertizing-delhi.png')",
+          backgroundImage:"url('/printing-branding-services-arvind-advertizing-delhi.webp')",
           backgroundSize:"cover", backgroundPosition:"center",
         }}
       />
@@ -69,7 +69,7 @@ export default function HeroSection() {
 >
           Bulk Printing &amp; Branding
           <br />
-          <span className="text-gradient-orange">Solutions Across India</span>
+          <span className="text-gradient-orange">Solutions in Delhi &amp; Across India</span>
         </h1>
 
         <p

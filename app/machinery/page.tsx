@@ -4,14 +4,29 @@ import AnimatedSection from "../components/AnimatedSection";
 import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Machinery – Industrial Printing Equipment | Arvind Advertizing",
-  description: "State-of-the-art UV flatbed, solvent, latex and offset printing machinery for high-quality output.",
+  title: "Our Printing Machinery – UV Flatbed, Starfire, HP Latex, Konica Minolta",
+  description: "Advanced industrial printing equipment at Arvind Advertizing Delhi: UV flatbed printers, StarFire solvent printers, HP Latex, Konica Minolta digital press, eco-solvent, CNC plotter & thermal lamination machines.",
   alternates: { canonical: "https://arvindadvertizing.com/machinery" },
   openGraph: {
-    title: "Printing Machinery – Arvind Advertizing",
+    title: "Industrial Printing Machinery – Arvind Advertizing Delhi",
+    description: "State-of-the-art UV flatbed, solvent, latex and digital printing machinery for premium output.",
     url: "https://arvindadvertizing.com/machinery",
-    images: [{ url: "/og/machinery.jpg", width: 1200, height: 630, alt: "Industrial Printing Machinery" }],
+    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Industrial Printing Machinery at Arvind Advertizing Delhi" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Printing Machinery – Arvind Advertizing",
+    description: "UV flatbed, StarFire solvent, HP Latex, digital press & more.",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
+    { "@type": "ListItem", position: 2, name: "Machinery", item: "https://arvindadvertizing.com/machinery" },
+  ],
 };
 
 const MACHINES = [
@@ -26,7 +41,7 @@ const MACHINES = [
     "Printing speed: Up to 60㎡/h",
     "UV flatbed direct printing"
   ],
-  img: "printing-branding-services-arvind-advertizing-delhi.png",
+  img: "printing-branding-services-arvind-advertizing-delhi.webp",
   badge: ""
 },
  {
@@ -55,7 +70,7 @@ const MACHINES = [
     "Color accuracy: ±0.1 mm",
 , 
   ],
-  img: "starfire-solvent-printer-flex-banner-printing.jpg",
+  img: "starfire-solvent-printer-flex-banner-printing.webp",
   badge: ""
 },
   {
@@ -83,7 +98,7 @@ const MACHINES = [
       "Printing speed: Up to 91 sqm/hr",
       "Suitable for Vinyl, flex, canvas, wallpaper, fabric"
     ],
-    img: "hp-latex-printer-flex-printing-machine-arvind.png",
+    img: "hp-latex-printer-flex-printing-machine-arvind.webp",
     badge: ""
 },
  
@@ -113,7 +128,7 @@ const MACHINES = [
     "Speed: Up to 100 pages/min",
     "Suitable for Photo, stickers, brochures, packaging & catalogs"
   ],
-  img: "offset-press-machine-commercial-printing-india.jpg",
+  img: "offset-press-machine-commercial-printing-india.webp",
   badge: ""
 },
   {
@@ -126,7 +141,7 @@ const MACHINES = [
     "Automatic contour detection for printed graphics",
     "Suitable for paper, vinyl, stickers, labels & packaging"
   ],
-  img: "vinyl-cutting-plotter-machine-sign-making-delhi.jpeg",
+  img: "vinyl-cutting-plotter-machine-sign-making-delhi.webp",
   badge: ""
 },
   {
@@ -155,6 +170,7 @@ const ADVANTAGES = [
 export default function MachineryPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="relative py-36 bg-brand-charcoal overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/60 to-brand-charcoal/95" />
