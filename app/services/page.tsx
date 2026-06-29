@@ -4,12 +4,12 @@ import ServicesClient from "./ServicesClient";
 export const metadata: Metadata = {
   title: "Printing & Branding Services – Flex, UV, Sign Boards, Event Branding",
   description: "Explore Arvind Advertizing's complete printing & branding services: flex printing, UV printing, sign board fabrication, event branding, digital paper printing & corporate branding across India.",
-  alternates: { canonical: "https://arvindadvertizing.com/services" },
+  alternates: { canonical: "https://www.arvindadvertizing.com/services" },
   openGraph: {
     title: "Printing & Branding Services – Arvind Advertizing Delhi",
     description: "Industrial-scale printing: flex, UV, sign boards, event branding & paper printing for businesses across India.",
-    url: "https://arvindadvertizing.com/services",
-    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Printing Services by Arvind Advertizing Delhi" }],
+    url: "https://www.arvindadvertizing.com/services",
+    images: [{ url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Printing Services by Arvind Advertizing Delhi" }],
   },
 };
 
@@ -76,7 +76,7 @@ const servicesSchema = {
   serviceType: "Printing and Branding",
   provider: {
     "@type": "LocalBusiness",
-    "@id": "https://arvindadvertizing.com/#business",
+    "@id": "https://www.arvindadvertizing.com/#business",
     name: "Arvind Advertizing",
   },
   areaServed: "India",
@@ -99,8 +99,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
-    { "@type": "ListItem", position: 2, name: "Services", item: "https://arvindadvertizing.com/services" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arvindadvertizing.com" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.arvindadvertizing.com/services" },
   ],
 };
 

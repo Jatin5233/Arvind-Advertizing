@@ -6,12 +6,12 @@ import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Our Printing Machinery – UV Flatbed, Starfire, HP Latex, Konica Minolta",
   description: "Advanced industrial printing equipment at Arvind Advertizing Delhi: UV flatbed printers, StarFire solvent printers, HP Latex, Konica Minolta digital press, eco-solvent, CNC plotter & thermal lamination machines.",
-  alternates: { canonical: "https://arvindadvertizing.com/machinery" },
+  alternates: { canonical: "https://www.arvindadvertizing.com/machinery" },
   openGraph: {
     title: "Industrial Printing Machinery – Arvind Advertizing Delhi",
     description: "State-of-the-art UV flatbed, solvent, latex and digital printing machinery for premium output.",
-    url: "https://arvindadvertizing.com/machinery",
-    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Industrial Printing Machinery at Arvind Advertizing Delhi" }],
+    url: "https://www.arvindadvertizing.com/machinery",
+    images: [{ url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Industrial Printing Machinery at Arvind Advertizing Delhi" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,8 +24,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
-    { "@type": "ListItem", position: 2, name: "Machinery", item: "https://arvindadvertizing.com/machinery" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arvindadvertizing.com" },
+    { "@type": "ListItem", position: 2, name: "Machinery", item: "https://www.arvindadvertizing.com/machinery" },
   ],
 };
 

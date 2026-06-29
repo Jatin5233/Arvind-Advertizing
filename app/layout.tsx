@@ -6,7 +6,7 @@ import WhatsAppFloat from "./components/WhatsAppFloat";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arvindadvertizing.com"),
+  metadataBase: new URL("https://www.arvindadvertizing.com"),
   title: {
     default: "Arvind Advertizing – Printing & Branding Services in Delhi, India",
     template: "%s | Arvind Advertizing",
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     siteName: "Arvind Advertizing",
     locale: "en_IN",
     type: "website",
-    url: "https://arvindadvertizing.com",
+    url: "https://www.arvindadvertizing.com",
     title: "Arvind Advertizing – Printing & Branding Services in Delhi, India",
     description:
       "Delhi's leading printing & branding manufacturer — flex banners, UV printing, LED sign boards, event branding & corporate identity. 2500+ projects, 800+ clients across India.",
     images: [
       {
-        url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
+        url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
         width: 1200,
         height: 630,
         alt: "Arvind Advertizing – Printing & Branding Services Delhi India",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Arvind Advertizing – Printing & Branding Services Delhi",
     description:
       "Industrial-scale flex, UV, sign board & event branding across India. Get a free quote in 24 hours.",
-    images: ["https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp"],
+    images: ["https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp"],
   },
   robots: {
     index: true,
@@ -49,11 +49,14 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://arvindadvertizing.com",
+    canonical: "https://www.arvindadvertizing.com",
   },
-  // verification: {
-  //   google: "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
-  // },
+  verification: {
+    google: "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+    other: {
+      "msvalidate.01": "YOUR_BING_WEBMASTER_TOOLS_VERIFICATION_CODE",
+    },
+  },
   other: {
     "geo.region": "IN-DL",
     "geo.placename": "Delhi",
@@ -66,14 +69,14 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://arvindadvertizing.com/#business",
+  "@id": "https://www.arvindadvertizing.com/#business",
   name: "Arvind Advertizing",
   alternateName: "Arvind Advertising",
-  url: "https://arvindadvertizing.com",
+  url: "https://www.arvindadvertizing.com",
   telephone: "+91-9810718141",
   email: "arvind.advertizing@gmail.com",
-  image: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
-  logo: "https://arvindadvertizing.com/icon.webp",
+  image: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
+  logo: "https://www.arvindadvertizing.com/icon.webp",
   description:
     "Delhi's leading printing and branding manufacturing company specializing in flex printing, UV printing, digital paper printing, sign boards, event branding, and corporate branding solutions across India.",
   priceRange: "₹₹",

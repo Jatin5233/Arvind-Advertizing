@@ -7,12 +7,12 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us – 15+ Years of Printing & Branding Excellence",
   description: "Arvind Advertizing has 15+ years of printing & branding expertise, 2500+ projects completed, 800+ happy clients across 120+ cities in India. Learn about our journey, team & advanced production facility.",
-  alternates: { canonical: "https://arvindadvertizing.com/about" },
+  alternates: { canonical: "https://www.arvindadvertizing.com/about" },
   openGraph: {
     title: "About Arvind Advertizing – India's Trusted Printing Partner",
     description: "15+ years of printing & branding excellence across India. 2500+ projects, 800+ clients.",
-    url: "https://arvindadvertizing.com/about",
-    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "About Arvind Advertizing – Printing and Branding Company Delhi" }],
+    url: "https://www.arvindadvertizing.com/about",
+    images: [{ url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "About Arvind Advertizing – Printing and Branding Company Delhi" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://arvindadvertizing.com/#organization",
+  "@id": "https://www.arvindadvertizing.com/#organization",
   name: "Arvind Advertizing",
-  url: "https://arvindadvertizing.com",
-  logo: "https://arvindadvertizing.com/icon.webp",
+  url: "https://www.arvindadvertizing.com",
+  logo: "https://www.arvindadvertizing.com/icon.webp",
   description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
   foundingDate: "2011",
   founder: {
@@ -58,8 +58,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
-    { "@type": "ListItem", position: 2, name: "About Us", item: "https://arvindadvertizing.com/about" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arvindadvertizing.com" },
+    { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.arvindadvertizing.com/about" },
   ],
 };
 

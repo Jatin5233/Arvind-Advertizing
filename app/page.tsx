@@ -9,13 +9,13 @@ import ClientsMarquee from "./components/ClientsMarquee";
 export const metadata: Metadata = {
   title: "Arvind Advertizing – #1 Flex, UV & Sign Board Printing in Delhi",
   description: "India's trusted printing partner for flex banners, UV printing, LED sign boards, event branding & corporate identity. 2500+ projects delivered. Get a free quote in 24 hours.",
-  alternates: { canonical: "https://arvindadvertizing.com" },
+  alternates: { canonical: "https://www.arvindadvertizing.com" },
   openGraph: {
     type: "website",
     title: "Arvind Advertizing – #1 Printing & Branding Company in Delhi",
     description: "Delhi's leading printing & branding manufacturer. Flex banners, UV printing, LED sign boards, event branding & corporate identity. 2500+ projects, 800+ clients. Free quote in 24 hrs.",
-    url: "https://arvindadvertizing.com",
-    images: [{ url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Arvind Advertizing Printing Services Delhi India" }],
+    url: "https://www.arvindadvertizing.com",
+    images: [{ url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp", width: 1200, height: 630, alt: "Arvind Advertizing Printing Services Delhi India" }],
   },
 };
 
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://arvindadvertizing.com/#website",
+  "@id": "https://www.arvindadvertizing.com/#website",
   name: "Arvind Advertizing",
-  url: "https://arvindadvertizing.com",
+  url: "https://www.arvindadvertizing.com",
   description: "Delhi's leading printing & branding manufacturing company.",
   publisher: {
-    "@id": "https://arvindadvertizing.com/#business",
+    "@id": "https://www.arvindadvertizing.com/#business",
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://arvindadvertizing.com/services?q={search_term_string}",
+    target: "https://www.arvindadvertizing.com/services?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -46,7 +46,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://arvindadvertizing.com",
+      item: "https://www.arvindadvertizing.com",
     },
   ],
 };

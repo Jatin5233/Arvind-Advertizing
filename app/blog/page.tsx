@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   title: "Printing & Sign Board Guides | Arvind Advertizing Delhi",
   description:
     "Delhi printing experts share guides on UV printing, flex boards, LED sign boards, event branding & corporate identity. From Arvind Advertizing, Bhajanpura.",
-  alternates: { canonical: "https://arvindadvertizing.com/blog" },
+  alternates: { canonical: "https://www.arvindadvertizing.com/blog" },
   openGraph: {
     type: "website",
     title: "Printing & Branding Blog – Arvind Advertizing Delhi",
     description:
       "Delhi printing experts share guides on UV printing, flex boards, LED sign boards, event branding & corporate identity.",
-    url: "https://arvindadvertizing.com/blog",
+    url: "https://www.arvindadvertizing.com/blog",
     images: [
       {
-        url: "https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
+        url: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
         width: 1200,
         height: 630,
         alt: "Arvind Advertizing Blog – Printing & Branding Guides",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Printing & Branding Blog – Arvind Advertizing Delhi",
     description:
       "Expert guides on UV printing, flex boards, LED sign boards & branding from Delhi's leading printing company.",
-    images: ["https://arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp"],
+    images: ["https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp"],
   },
 };
 
@@ -41,13 +41,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://arvindadvertizing.com",
+      item: "https://www.arvindadvertizing.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://arvindadvertizing.com/blog",
+      item: "https://www.arvindadvertizing.com/blog",
     },
   ],
 };
@@ -58,10 +58,10 @@ const blogSchema = {
   name: "Arvind Advertizing Blog",
   description:
     "Expert guides on printing, branding, signage, and advertising from Arvind Advertizing Delhi.",
-  url: "https://arvindadvertizing.com/blog",
+  url: "https://www.arvindadvertizing.com/blog",
   publisher: {
     "@type": "Organization",
-    "@id": "https://arvindadvertizing.com/#business",
+    "@id": "https://www.arvindadvertizing.com/#business",
     name: "Arvind Advertizing",
   },
 };

@@ -21,18 +21,18 @@ export async function generateMetadata(
   return {
     title,
     description,
-    alternates: { canonical: `https://arvindadvertizing.com/services/${svc.slug}` },
+    alternates: { canonical: `https://www.arvindadvertizing.com/services/${svc.slug}` },
     openGraph: {
       title: `${svc.title} – Arvind Advertizing Delhi`,
       description,
-      url: `https://arvindadvertizing.com/services/${svc.slug}`,
-      images: [{ url: `https://arvindadvertizing.com${svc.images[0]}`, width: 1200, height: 630, alt: `${svc.title} by Arvind Advertizing Delhi` }],
+      url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
+      images: [{ url: `https://www.arvindadvertizing.com${svc.images[0]}`, width: 1200, height: 630, alt: `${svc.title} by Arvind Advertizing Delhi` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${svc.title} – Arvind Advertizing`,
       description: svc.shortDesc,
-      images: [`https://arvindadvertizing.com${svc.images[0]}`],
+      images: [`https://www.arvindadvertizing.com${svc.images[0]}`],
     },
   };
 }
@@ -50,7 +50,7 @@ export default function ServicePage({ params }: { params: { service: string } })
     description: svc.fullDesc,
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://arvindadvertizing.com/#business",
+      "@id": "https://www.arvindadvertizing.com/#business",
       name: "Arvind Advertizing",
     },
     areaServed: {
@@ -58,8 +58,8 @@ export default function ServicePage({ params }: { params: { service: string } })
       name: "India",
     },
     serviceType: svc.title,
-    image: `https://arvindadvertizing.com${svc.images[0]}`,
-    url: `https://arvindadvertizing.com/services/${svc.slug}`,
+    image: `https://www.arvindadvertizing.com${svc.images[0]}`,
+    url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
@@ -72,9 +72,9 @@ export default function ServicePage({ params }: { params: { service: string } })
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://arvindadvertizing.com/services" },
-      { "@type": "ListItem", position: 3, name: svc.title, item: `https://arvindadvertizing.com/services/${svc.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arvindadvertizing.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://www.arvindadvertizing.com/services" },
+      { "@type": "ListItem", position: 3, name: svc.title, item: `https://www.arvindadvertizing.com/services/${svc.slug}` },
     ],
   };
 

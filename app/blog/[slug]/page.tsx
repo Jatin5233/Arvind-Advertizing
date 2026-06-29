@@ -23,16 +23,16 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     alternates: {
-      canonical: `https://arvindadvertizing.com/blog/${post.slug}`,
+      canonical: `https://www.arvindadvertizing.com/blog/${post.slug}`,
     },
     openGraph: {
       type: "article",
       title: post.title,
       description: post.excerpt,
-      url: `https://arvindadvertizing.com/blog/${post.slug}`,
+      url: `https://www.arvindadvertizing.com/blog/${post.slug}`,
       images: [
         {
-          url: `https://arvindadvertizing.com${post.image}`,
+          url: `https://www.arvindadvertizing.com${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -46,7 +46,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [`https://arvindadvertizing.com${post.image}`],
+      images: [`https://www.arvindadvertizing.com${post.image}`],
     },
   };
 }
@@ -203,37 +203,39 @@ export default function BlogPostPage({
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `https://arvindadvertizing.com${post.image}`,
+    image: `https://www.arvindadvertizing.com${post.image}`,
     author: {
       "@type": "Organization",
       name: post.author,
-      url: "https://arvindadvertizing.com",
+      url: "https://www.arvindadvertizing.com",
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://arvindadvertizing.com/#business",
+      "@id": "https://www.arvindadvertizing.com/#business",
       name: "Arvind Advertizing",
       logo: {
         "@type": "ImageObject",
-        url: "https://arvindadvertizing.com/icon.webp",
+        url: "https://www.arvindadvertizing.com/icon.webp",
       },
     },
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://arvindadvertizing.com/blog/${post.slug}`,
+      "@id": `https://www.arvindadvertizing.com/blog/${post.slug}`,
     },
     keywords: post.tags.join(", "),
+    wordCount: post.content.split(/\s+/).length,
+    articleBody: post.excerpt,
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://arvindadvertizing.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://arvindadvertizing.com/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://arvindadvertizing.com/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arvindadvertizing.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.arvindadvertizing.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.arvindadvertizing.com/blog/${post.slug}` },
     ],
   };
 

@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/_next/", "/api/"],
       },
     ],
-    sitemap: "https://arvindadvertizing.com/sitemap.xml",
-    host: "https://arvindadvertizing.com",
+    sitemap: "https://www.arvindadvertizing.com/sitemap.xml",
+    host: "https://www.arvindadvertizing.com",
   };
 }
