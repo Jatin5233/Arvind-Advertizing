@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: post.title,
+    title: { absolute: post.title },
     description: post.excerpt,
     alternates: {
       canonical: `https://www.arvindadvertizing.com/blog/${post.slug}`,
@@ -215,7 +215,7 @@ export default function BlogPostPage({
       name: "Arvind Advertizing",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.arvindadvertizing.com/icon.webp",
+        url: "https://www.arvindadvertizing.com/icon.png",
       },
     },
     datePublished: post.date,
@@ -226,7 +226,7 @@ export default function BlogPostPage({
     },
     keywords: post.tags.join(", "),
     wordCount: post.content.split(/\s+/).length,
-    articleBody: post.excerpt,
+    articleBody: post.content,
   };
 
   const breadcrumbSchema = {

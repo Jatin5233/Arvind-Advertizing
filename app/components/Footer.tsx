@@ -1,9 +1,13 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Star } from "lucide-react";
 
 const SERVICES = [
-  "Flex Printing","UV Printing","Sign Boards",
-  "Event Branding","Paper Printing","Retail Branding",
+  { label: "Flex Printing", href: "/services/flex-printing" },
+  { label: "UV Printing", href: "/services/uv-printing" },
+  { label: "Sign Boards", href: "/services/sign-boards" },
+  { label: "Event Branding", href: "/services/event-branding" },
+  { label: "Paper Printing", href: "/services/digital-paper-printing" },
+  { label: "Retail Branding", href: "/services/corporate-branding" },
 ];
 const LINKS = [
   { href: "/",          label: "Home" },
@@ -36,17 +40,17 @@ export default function Footer() {
             <div className="flex gap-3">
   {[
     {
-      Icon: Instagram,
-      href: "https://www.instagram.com/arvindadvertizingindia/",
-      label: "Follow Arvind Advertizing on Instagram",
-    },
-    {
-      Icon: Linkedin,
-      href: "https://www.linkedin.com/company/arvind-advertizing-india/posts/?feedView=all",
-      label: "Arvind Advertizing on LinkedIn",
+      Icon: MessageCircle,
+      href: "https://wa.me/919810718141",
+      label: "Chat with Arvind Advertizing on WhatsApp",
     },
     {
       Icon: Phone,
+      href: "tel:+919810718141",
+      label: "Call Arvind Advertizing",
+    },
+    {
+      Icon: Star,
       href: "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
       label: "Arvind Advertizing on JustDial",
     },
@@ -74,11 +78,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {SERVICES.map((s) => (
-                <li key={s}>
-                  <Link href="/services"
+                <li key={s.href}>
+                  <Link href={s.href}
                         className="text-white/45 text-sm hover:text-brand-orange
                                    transition-colors duration-200 hover:pl-1 inline-block">
-                    {s}
+                    {s.label}
                   </Link>
                 </li>
               ))}

@@ -15,11 +15,11 @@ export async function generateMetadata(
   const svc = getService(params.service);
   if (!svc) return {};
 
-  const title = `${svc.title} in Delhi – Best ${svc.title} Services | Arvind Advertizing`;
+  const title = `${svc.title} Services Delhi | Arvind Advertizing`;
   const description = `${svc.shortDesc} Trusted by 800+ clients across India. Get a free quote for ${svc.title.toLowerCase()} from Arvind Advertizing Delhi.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: `https://www.arvindadvertizing.com/services/${svc.slug}` },
     openGraph: {
@@ -62,9 +62,11 @@ export default function ServicePage({ params }: { params: { service: string } })
     url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
     offers: {
       "@type": "Offer",
-      availability: "https://schema.org/InStock",
       priceCurrency: "INR",
-      eligibleRegion: { "@type": "Country", name: "India" },
+      price: "0",
+      priceValidUntil: "2027-12-31",
+      availability: "https://schema.org/InStock",
+      url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
     },
   };
 

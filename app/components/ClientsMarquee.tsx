@@ -10,7 +10,7 @@ const ROW_1: { name: string; logo: string; size: "sm" | "md" | "lg" | "xl" }[] =
   { name: "Idfc", logo: "/clients/Idfc.webp", size: "lg" },
   { name: "Delhi Police", logo: "/clients/Delhi-police.webp", size: "lg" },
   { name: "Sintex", logo: "/clients/Sintex.webp", size: "lg" },
-  { name: "Hero", logo: "/clients/Hero.webp", size: "lg" },
+  { name: "Hero", logo: "/clients/hero.webp", size: "lg" },
 ];
 
 const ROW_2: { name: string; logo: string; size: "sm" | "md" | "lg" | "xl" }[] = [
@@ -19,7 +19,7 @@ const ROW_2: { name: string; logo: string; size: "sm" | "md" | "lg" | "xl" }[] =
   { name: "Sbi", logo: "/clients/Sbi.webp", size: "lg" },
   { name: "Campa", logo: "/clients/Campa.webp", size: "lg" },
   { name: "Himalaya", logo: "/clients/Himalaya.webp", size: "lg" },
-  { name: "LnT", logo: "/clients/Lnt.webp", size: "lg" },
+  { name: "LnT", logo: "/clients/LnT.webp", size: "lg" },
   { name: "Airtel", logo: "/clients/Airtel.webp", size: "lg" },
   { name: "Rolex", logo: "/clients/Rolex.webp", size: "lg" },
 ];
@@ -30,7 +30,7 @@ const ROW_3: { name: string; logo: string; size: "sm" | "md" | "lg" | "xl" }[] =
   { name: "Action", logo: "/clients/Action.webp", size: "lg" },
   { name: "Dabur", logo: "/clients/Dabur.webp", size: "lg" },
   { name: "Sbi", logo: "/clients/Sbi.webp", size: "lg" },
-  { name: "Hero", logo: "/clients/Hero.webp", size: "lg" },
+  { name: "Hero", logo: "/clients/hero.webp", size: "lg" },
   { name: "Adani", logo: "/clients/Adani.webp", size: "lg" },
   { name: "Airtel", logo: "/clients/Airtel.webp", size: "lg" },
   { name: "Himalaya", logo: "/clients/Himalaya.webp", size: "lg" },

@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   },
   description:
     "Arvind Advertizing is Delhi's leading printing & branding company. Industrial-scale flex printing, UV printing, sign boards, event branding & corporate identity solutions across India. Get a free quote today.",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: ["/icon.png"],
+    apple: [
+      { url: "/icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     siteName: "Arvind Advertizing",
     locale: "en_IN",
@@ -76,7 +85,7 @@ const localBusinessSchema = {
   telephone: "+91-9810718141",
   email: "arvind.advertizing@gmail.com",
   image: "https://www.arvindadvertizing.com/printing-branding-services-arvind-advertizing-delhi.webp",
-  logo: "https://www.arvindadvertizing.com/icon.webp",
+  logo: "https://www.arvindadvertizing.com/icon.png",
   description:
     "Delhi's leading printing and branding manufacturing company specializing in flex printing, UV printing, digital paper printing, sign boards, event branding, and corporate branding solutions across India.",
   priceRange: "₹₹",
@@ -99,8 +108,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "28.702073",
-    longitude: "77.256074",
+    latitude: 28.702073,
+    longitude: 77.256074,
   },
   hasMap:
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
@@ -131,22 +140,22 @@ const localBusinessSchema = {
     "@type": "GeoCircle",
     geoMidpoint: {
       "@type": "GeoCoordinates",
-      latitude: "28.702073",
-      longitude: "77.256074",
+      latitude: 28.702073,
+      longitude: 77.256074,
     },
     geoRadius: "50000",
   },
   sameAs: [
-    "https://www.instagram.com/arvindadvertizingindia/",
-    "https://www.linkedin.com/company/arvind-advertizing",
     "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "120",
-    bestRating: "5",
+    ratingValue: 4.8,
+    reviewCount: 120,
+    ratingCount: 120,
+    bestRating: 5,
+    worstRating: 1,
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

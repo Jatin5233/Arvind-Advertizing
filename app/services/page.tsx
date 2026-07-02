@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Printing & Branding Services – Flex, UV, Sign Boards, Event Branding",
+  title: { absolute: "Printing & Branding Services Delhi | Arvind Advertizing" },
   description: "Explore Arvind Advertizing's complete printing & branding services: flex printing, UV printing, sign board fabrication, event branding, digital paper printing & corporate branding across India.",
   alternates: { canonical: "https://www.arvindadvertizing.com/services" },
   openGraph: {

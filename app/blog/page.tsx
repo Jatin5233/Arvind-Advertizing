@@ -5,7 +5,7 @@ import AnimatedSection from "../components/AnimatedSection";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Printing & Sign Board Guides | Arvind Advertizing Delhi",
+  title: { absolute: "Printing & Branding Blog Delhi | Arvind Advertizing" },
   description:
     "Delhi printing experts share guides on UV printing, flex boards, LED sign boards, event branding & corporate identity. From Arvind Advertizing, Bhajanpura.",
   alternates: { canonical: "https://www.arvindadvertizing.com/blog" },

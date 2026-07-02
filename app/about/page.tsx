@@ -5,7 +5,7 @@ import Counter from "../components/Counter";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us – 15+ Years of Printing & Branding Excellence",
+  title: { absolute: "About Arvind Advertizing – Printing Company Delhi" },
   description: "Arvind Advertizing has 15+ years of printing & branding expertise, 2500+ projects completed, 800+ happy clients across 120+ cities in India. Learn about our journey, team & advanced production facility.",
   alternates: { canonical: "https://www.arvindadvertizing.com/about" },
   openGraph: {
@@ -27,7 +27,7 @@ const organizationSchema = {
   "@id": "https://www.arvindadvertizing.com/#organization",
   name: "Arvind Advertizing",
   url: "https://www.arvindadvertizing.com",
-  logo: "https://www.arvindadvertizing.com/icon.webp",
+  logo: "https://www.arvindadvertizing.com/icon.png",
   description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
   foundingDate: "2011",
   founder: {
@@ -49,8 +49,8 @@ const organizationSchema = {
     addressCountry: "IN",
   },
   sameAs: [
-    "https://www.instagram.com/arvindadvertizingindia/",
-    "https://www.linkedin.com/company/arvind-advertizing",
+    "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
+    "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
   ],
 };
 

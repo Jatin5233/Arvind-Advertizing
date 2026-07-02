@@ -4,7 +4,7 @@ import AnimatedSection from "../components/AnimatedSection";
 import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Printing Machinery – UV Flatbed, Starfire, HP Latex, Konica Minolta",
+  title: { absolute: "Industrial Printing Machinery Delhi | Arvind Advertizing" },
   description: "Advanced industrial printing equipment at Arvind Advertizing Delhi: UV flatbed printers, StarFire solvent printers, HP Latex, Konica Minolta digital press, eco-solvent, CNC plotter & thermal lamination machines.",
   alternates: { canonical: "https://www.arvindadvertizing.com/machinery" },
   openGraph: {
