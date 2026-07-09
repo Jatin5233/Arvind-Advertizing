@@ -3,6 +3,7 @@ import ServicesSection    from "./components/ServicesSection";
 import WhyUsSection       from "./components/WhyUsSection";
 import ProcessSection     from "./components/ProcessSection";
 import ContactSection     from "./components/ContactSection";
+import SeoKeywordHub      from "./components/SeoKeywordHub";
 import type { Metadata } from "next";
 import ClientsMarquee from "./components/ClientsMarquee";
 
@@ -52,6 +53,7 @@ export default function HomePage() {
       <WhyUsSection />
       <ProcessSection />
       <ClientsMarquee />
+      <SeoKeywordHub />
       <ContactSection />
     </>
   );

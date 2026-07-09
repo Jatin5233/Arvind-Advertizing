@@ -1,0 +1,32 @@
+# ==============================================================================
+# Google Search Console & Semrush Disavow File for www.arvindadvertizing.com
+# Generated on: July 8, 2026
+# Purpose: Neutralize toxic backlinks (`High Toxicity Score: 95 Toxic Domains`)
+# ==============================================================================
+#
+# INSTRUCTIONS FOR SEO MANAGER / WEBSITE OWNER:
+# 1. In your Semrush Backlink Audit dashboard (Project: www.arvindadvertizing.com):
+#    - Go to the "Domains by Toxicity Score" tab.
+#    - Check the box next to all 95 "Toxic" referring domains.
+#    - Click "Move to Disavow" -> choose "Domain level".
+#    - Go to the "Disavow" tab in Semrush and click "Export to TXT".
+# 2. Copy all the exported `domain:example.com` lines from Semrush and paste them
+#    below the `# --- TOXIC REFERRING DOMAINS ---` divider in this file.
+# 3. Go to Google Search Console Disavow Tool:
+#    https://search.google.com/search-console/disavow-links
+# 4. Select property `https://www.arvindadvertizing.com` and upload this file (`disavow.txt`).
+#
+# Note: Syntax requires `domain:example.com` to disavow an entire domain,
+# or `http://example.com/spam-page.html` to disavow a specific URL.
+# ==============================================================================
+
+# --- SPAM ANCHOR PATTERNS & KNOWN TOXIC NETWORKS TO DISAVOW ---
+# (PBN networks, Fiverr link-building gigs, link farms, and automated scrapers)
+
+# Example entries targeting spam link farm patterns identified in audit:
+# domain:cheap-seo-backlinks-pbn.com
+# domain:fiverr-seo-services-blog.net
+# domain:dofollow-links-network.org
+# domain:da50-pa40-premium-pbn.info
+
+# --- TOXIC REFERRING DOMAINS (PASTE SEMRUSH DISAVOW EXPORT BELOW) ---

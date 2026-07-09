@@ -20,8 +20,15 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: { absolute: post.title },
+    title: { absolute: `${post.title} | Arvind Advertising Delhi` },
     description: post.excerpt,
+    keywords: [
+      ...post.tags,
+      post.category,
+      "Arvind Advertising Blog",
+      "Delhi Printing Guide",
+      "Printing Prices Delhi",
+    ],
     alternates: {
       canonical: `https://www.arvindadvertizing.com/blog/${post.slug}`,
     },
@@ -212,7 +219,7 @@ export default function BlogPostPage({
     publisher: {
       "@type": "Organization",
       "@id": "https://www.arvindadvertizing.com/#business",
-      name: "Arvind Advertizing",
+      name: "ARVIND ADVERTISING",
       logo: {
         "@type": "ImageObject",
         url: "https://www.arvindadvertizing.com/icon.png",

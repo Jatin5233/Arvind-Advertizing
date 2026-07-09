@@ -5,9 +5,18 @@ import AnimatedSection from "../components/AnimatedSection";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Printing & Branding Blog Delhi | Arvind Advertizing" },
+  title: { absolute: "Printing & Branding Blog Delhi | Arvind Advertizing Guides" },
   description:
-    "Delhi printing experts share guides on UV printing, flex boards, LED sign boards, event branding & corporate identity. From Arvind Advertizing, Bhajanpura.",
+    "Delhi printing experts share guides on UV printing vs digital printing, how to choose sign boards, flex banner materials, costs & corporate identity tips from Arvind Advertizing.",
+  keywords: [
+    "Printing & Branding Blog",
+    "Flex Printing Guide Delhi",
+    "UV vs Digital Printing",
+    "LED Sign Board Buying Guide",
+    "Printing Prices Delhi",
+    "Arvind Advertising Blog",
+    "Offset Printing Tips",
+  ],
   alternates: { canonical: "https://www.arvindadvertizing.com/blog" },
   openGraph: {
     type: "website",

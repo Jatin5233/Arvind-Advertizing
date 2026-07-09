@@ -6,6 +6,16 @@ import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: { absolute: "Industrial Printing Machinery Delhi | Arvind Advertizing" },
   description: "Advanced industrial printing equipment at Arvind Advertizing Delhi: UV flatbed printers, StarFire solvent printers, HP Latex, Konica Minolta digital press, eco-solvent, CNC plotter & thermal lamination machines.",
+  keywords: [
+    "DOCAN H1000 UV Flatbed Printer Delhi",
+    "StarFire Solvent Printer Delhi",
+    "HP Latex Printing Machine India",
+    "Konica Minolta Digital Press Delhi",
+    "Eco Solvent Vinyl Printer Delhi",
+    "Industrial Flex Printing Machines Delhi",
+    "CNC Vinyl Plotter Delhi",
+    "Arvind Advertising Machinery",
+  ],
   alternates: { canonical: "https://www.arvindadvertizing.com/machinery" },
   openGraph: {
     title: "Industrial Printing Machinery – Arvind Advertizing Delhi",

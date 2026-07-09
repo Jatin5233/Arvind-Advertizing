@@ -14,6 +14,26 @@ export const metadata: Metadata = {
   },
   description:
     "Arvind Advertizing is Delhi's leading printing & branding company. Industrial-scale flex printing, UV printing, sign boards, event branding & corporate identity solutions across India. Get a free quote today.",
+  keywords: [
+    "Flex Printing Delhi",
+    "UV Printing Delhi",
+    "Sign Board Manufacturers Delhi",
+    "LED Glow Sign Board Delhi",
+    "Event Branding Companies Delhi",
+    "Exhibition Stall Design Delhi",
+    "Digital Paper Printing Delhi",
+    "Offset Printing Services Delhi",
+    "Acrylic Sign Board Fabrication Delhi",
+    "Retail Store Branding India",
+    "Vinyl Printing Near Me",
+    "Sunboard Printing Delhi",
+    "Roll up Standee Printing Delhi",
+    "Commercial Signage Manufacturers India",
+    "Corporate Branding Agencies Delhi NCR",
+    "Khajoori Pushta Road Printing Shop",
+    "Arvind Advertising Delhi",
+    "Arvind Advertizing",
+  ],
   icons: {
     icon: [
       { url: "/icon.png", type: "image/png" },
@@ -78,10 +98,10 @@ export const metadata: Metadata = {
 /* ── Single consolidated LocalBusiness + Service JSON-LD ── */
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": "https://www.arvindadvertizing.com/#business",
-  name: "Arvind Advertizing",
-  alternateName: "Arvind Advertising",
+  name: "ARVIND ADVERTISING",
+  alternateName: ["Arvind Advertizing", "Arvind Advertising Delhi", "Arvind Printers & Branding Delhi"],
   url: "https://www.arvindadvertizing.com",
   telephone: "+91-9810718141",
   email: "arvind.advertizing@gmail.com",
@@ -89,6 +109,7 @@ const localBusinessSchema = {
   logo: "https://www.arvindadvertizing.com/icon.png",
   description:
     "Delhi's leading printing and branding manufacturing company specializing in flex printing, UV printing, digital paper printing, sign boards, event branding, and corporate branding solutions across India.",
+  keywords: "Flex Printing Delhi, UV Printing Delhi, Sign Board Manufacturers Delhi, LED Glow Sign Board, Event Branding Companies Delhi, Offset Printing Services, Vinyl Printing Near Me, Acrylic Sign Board Fabrication Delhi, Corporate Branding Agencies India",
   priceRange: "₹₹",
   currenciesAccepted: "INR",
   paymentAccepted: "Cash, UPI, Bank Transfer",
@@ -100,8 +121,7 @@ const localBusinessSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress:
-      "First Floor, A-1/22, Pushta Rd, near Khajoori, Bhajanpura, Chowk",
+    streetAddress: "First Floor, A-1/22, Khajoori, Pushta Road",
     addressLocality: "Delhi",
     addressRegion: "Delhi",
     postalCode: "110053",

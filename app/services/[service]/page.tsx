@@ -15,12 +15,22 @@ export async function generateMetadata(
   const svc = getService(params.service);
   if (!svc) return {};
 
-  const title = `${svc.title} Services Delhi | Arvind Advertizing`;
-  const description = `${svc.shortDesc} Trusted by 800+ clients across India. Get a free quote for ${svc.title.toLowerCase()} from Arvind Advertizing Delhi.`;
+  const title = `${svc.title} Services Delhi NCR & India | Arvind Advertizing`;
+  const description = `${svc.shortDesc} Trusted by 800+ clients across India. Get a free quote & best prices for ${svc.title.toLowerCase()} in Delhi from Arvind Advertizing.`;
 
   return {
     title: { absolute: title },
     description,
+    keywords: [
+      `${svc.title} Delhi`,
+      `${svc.title} India`,
+      `${svc.title} Near Me`,
+      `${svc.title} Manufacturers Delhi`,
+      `${svc.title} Price Delhi`,
+      `${svc.title} Company in Khajoori Pushta Road Delhi`,
+      ...svc.features,
+      "Arvind Advertising Delhi",
+    ],
     alternates: { canonical: `https://www.arvindadvertizing.com/services/${svc.slug}` },
     openGraph: {
       title: `${svc.title} – Arvind Advertizing Delhi`,
@@ -48,15 +58,18 @@ export default function ServicePage({ params }: { params: { service: string } })
     "@type": "Service",
     name: svc.title,
     description: svc.fullDesc,
+    keywords: `${svc.title} Delhi, ${svc.title} India, ${svc.features.join(", ")}`,
     provider: {
       "@type": "LocalBusiness",
       "@id": "https://www.arvindadvertizing.com/#business",
-      name: "Arvind Advertizing",
+      name: "ARVIND ADVERTISING",
     },
-    areaServed: {
-      "@type": "Country",
-      name: "India",
-    },
+    areaServed: [
+      { "@type": "City", name: "Delhi" },
+      { "@type": "City", name: "Noida" },
+      { "@type": "City", name: "Gurugram" },
+      { "@type": "Country", name: "India" },
+    ],
     serviceType: svc.title,
     image: `https://www.arvindadvertizing.com${svc.images[0]}`,
     url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
@@ -67,6 +80,11 @@ export default function ServicePage({ params }: { params: { service: string } })
       priceValidUntil: "2027-12-31",
       availability: "https://schema.org/InStock",
       url: `https://www.arvindadvertizing.com/services/${svc.slug}`,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 4.9,
+      reviewCount: 48,
     },
   };
 
@@ -80,10 +98,34 @@ export default function ServicePage({ params }: { params: { service: string } })
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `What makes Arvind Advertizing the best provider for ${svc.title.toLowerCase()} in Delhi?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Arvind Advertizing combines industrial-grade machinery, over 15 years of manufacturing expertise, and direct factory pricing in Khajoori Pushta Road, Delhi to deliver superior quality ${svc.title.toLowerCase()} for businesses across India.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `How quickly can I get a quote and delivery for ${svc.title.toLowerCase()}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `We provide custom price estimates within 24 hours. Production and pan-India dispatch for ${svc.title.toLowerCase()} typically take 3 to 5 business days depending on volume and customization requirements.`,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServiceDetailClient service={svc} />
     </>
   );

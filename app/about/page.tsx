@@ -5,8 +5,17 @@ import Counter from "../components/Counter";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "About Arvind Advertizing – Printing Company Delhi" },
+  title: { absolute: "About Arvind Advertizing – Printing Company Delhi | Arvind Advertising" },
   description: "Arvind Advertizing has 15+ years of printing & branding expertise, 2500+ projects completed, 800+ happy clients across 120+ cities in India. Learn about our journey, team & advanced production facility.",
+  keywords: [
+    "About Arvind Advertizing",
+    "Arvind Advertising Delhi",
+    "Best Printing Company Delhi",
+    "Sign Board Manufacturers Bhajanpura Khajoori",
+    "Flex Printing Factory Delhi NCR",
+    "Mr Arvind Printing Director Delhi",
+    "Industrial Printing Unit Delhi",
+  ],
   alternates: { canonical: "https://www.arvindadvertizing.com/about" },
   openGraph: {
     title: "About Arvind Advertizing – India's Trusted Printing Partner",
@@ -25,7 +34,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://www.arvindadvertizing.com/#organization",
-  name: "Arvind Advertizing",
+  name: "ARVIND ADVERTISING",
+  alternateName: ["Arvind Advertizing", "Arvind Advertising Delhi"],
   url: "https://www.arvindadvertizing.com",
   logo: "https://www.arvindadvertizing.com/icon.png",
   description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
@@ -42,7 +52,7 @@ const organizationSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "A1 22-A, Pusta Road, NH-709, Pillar No-157, Bhajanpura",
+    streetAddress: "First Floor, A-1/22, Khajoori, Pushta Road",
     addressLocality: "Delhi",
     addressRegion: "Delhi",
     postalCode: "110053",

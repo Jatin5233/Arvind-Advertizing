@@ -2,8 +2,20 @@ import type { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
 
 export const metadata: Metadata = {
-  title: { absolute: "Printing & Branding Services Delhi | Arvind Advertizing" },
+  title: { absolute: "Printing & Branding Services Delhi NCR & India | Arvind Advertizing" },
   description: "Explore Arvind Advertizing's complete printing & branding services: flex printing, UV printing, sign board fabrication, event branding, digital paper printing & corporate branding across India.",
+  keywords: [
+    "Printing Services Delhi",
+    "Branding Services Delhi",
+    "Flex Printing Services India",
+    "UV Flatbed Printing Delhi",
+    "Sign Board Manufacturers Delhi",
+    "Event Branding Delhi NCR",
+    "Digital Paper Printing Delhi",
+    "Corporate Branding Solutions India",
+    "Arvind Advertising Delhi",
+    "Khajoori Pushta Road Printing",
+  ],
   alternates: { canonical: "https://www.arvindadvertizing.com/services" },
   openGraph: {
     title: "Printing & Branding Services – Arvind Advertizing Delhi",
@@ -77,7 +89,7 @@ const servicesSchema = {
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.arvindadvertizing.com/#business",
-    name: "Arvind Advertizing",
+    name: "ARVIND ADVERTISING",
   },
   areaServed: "India",
   hasOfferCatalog: {
