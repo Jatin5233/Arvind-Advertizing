@@ -21,7 +21,8 @@ const LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-charcoal relative overflow-hidden" aria-label="Site footer">
+    <footer className="bg-brand-charcoal relative overflow-hidden" aria-label="Site footer"
+            itemScope itemType="https://schema.org/LocalBusiness">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px]
                       bg-brand-blue/10 blur-[110px] rounded-full pointer-events-none" />
 
@@ -141,25 +142,25 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={15} className="text-brand-orange mt-0.5 shrink-0" />
                 <div>
-                  <a href="tel:+919810718141"
+                  <a href="tel:+919810718141" itemProp="telephone"
                      className="text-white/50 text-sm hover:text-brand-orange block">
                     +91 9810718141
                   </a>
-                  
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={15} className="text-brand-orange mt-0.5 shrink-0" />
-                <a href="mailto:arvind.advertizing@gmail.com"
+                <a href="mailto:arvind.advertizing@gmail.com" itemProp="email"
                    className="text-white/50 text-sm hover:text-brand-orange">
                   arvind.advertizing@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={15} className="text-brand-orange mt-0.5 shrink-0" />
-                <span className="text-white/50 text-sm">
-                  First Floor, A-1/22, Khajoori, Pushta Road, Delhi - 110053
-                </span>
+                <address className="not-italic text-white/50 text-sm leading-relaxed"
+                         itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                  <span itemProp="streetAddress">First Floor, A-1/22, Khajoori, Pushta Road</span>, <span itemProp="addressLocality">Delhi</span> - <span itemProp="postalCode">110053</span>
+                </address>
               </li>
             </ul>
           </div>

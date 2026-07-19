@@ -367,20 +367,28 @@ export default function ContactSection() {
                     <h4 className="font-display font-bold text-brand-charcoal text-sm mb-1">
                       {card.title}
                     </h4>
-                    {card.lines.map((line) =>
-                      card.href ? (
-                        <a
-                          key={line}
-                          href={card.href}
-                          target={card.href.startsWith("http") ? "_blank" : undefined}
-                          rel="noopener noreferrer"
-                          className="block text-gray-500 text-sm hover:text-brand-orange
-                                     transition-colors"
-                        >
-                          {line}
-                        </a>
-                      ) : (
-                        <p key={line} className="text-gray-500 text-sm">{line}</p>
+                    {card.title === "Visit Us" ? (
+                      <address className="not-italic text-gray-500 text-sm leading-relaxed"
+                               itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                        <span itemProp="streetAddress">First Floor, A-1/22, Khajoori, Pushta Road</span>, <span itemProp="addressLocality">Delhi</span> – <span itemProp="postalCode">110053</span>
+                      </address>
+                    ) : (
+                      card.lines.map((line) =>
+                        card.href ? (
+                          <a
+                            key={line}
+                            href={card.href}
+                            target={card.href.startsWith("http") ? "_blank" : undefined}
+                            rel="noopener noreferrer"
+                            className="block text-gray-500 text-sm hover:text-brand-orange
+                                       transition-colors"
+                            {...(card.title === "Call Us" ? { itemProp: "telephone" } : {})}
+                          >
+                            {line}
+                          </a>
+                        ) : (
+                          <p key={line} className="text-gray-500 text-sm">{line}</p>
+                        )
                       )
                     )}
                   </div>

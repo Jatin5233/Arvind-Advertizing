@@ -98,7 +98,7 @@ export const metadata: Metadata = {
 /* ── Single consolidated LocalBusiness + Service JSON-LD ── */
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@type": "LocalBusiness",
   "@id": "https://www.arvindadvertizing.com/#business",
   name: "ARVIND ADVERTISING",
   alternateName: ["Arvind Advertizing", "Arvind Advertising Delhi", "Arvind Printers & Branding Delhi"],
