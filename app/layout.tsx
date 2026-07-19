@@ -185,8 +185,8 @@ const localBusinessSchema = {
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
     "https://www.facebook.com/arvindadvertizing",
     "https://x.com/arvindadv",
-    "https://www.instagram.com/arvindadvertizing",
-    "https://www.youtube.com/@arvindadvertizing",
+    "https://www.instagram.com/arvindadvertizingindia/",
+    "https://www.youtube.com/@Arvind-Advertizing",
     "https://www.linkedin.com/company/arvind-advertizing",
   ],
   aggregateRating: {
@@ -309,8 +309,8 @@ const organizationSchema = {
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
     "https://www.facebook.com/arvindadvertizing",
     "https://x.com/arvindadv",
-    "https://www.instagram.com/arvindadvertizing",
-    "https://www.youtube.com/@arvindadvertizing",
+    "https://www.instagram.com/arvindadvertizingindia/",
+    "https://www.youtube.com/@Arvind-Advertizing",
     "https://www.linkedin.com/company/arvind-advertizing",
   ],
 };

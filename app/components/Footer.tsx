@@ -66,12 +66,12 @@ export default function Footer() {
     },
     {
       Icon: Instagram,
-      href: "https://www.instagram.com/arvindadvertizing",
+      href: "https://www.instagram.com/arvindadvertizingindia/",
       label: "Arvind Advertizing on Instagram",
     },
     {
       Icon: Youtube,
-      href: "https://www.youtube.com/@arvindadvertizing",
+      href: "https://www.youtube.com/@Arvind-Advertizing",
       label: "Arvind Advertizing on YouTube",
     },
     {
