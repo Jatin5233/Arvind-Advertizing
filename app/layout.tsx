@@ -134,6 +134,15 @@ const localBusinessSchema = {
   },
   hasMap:
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
+  map:
+    "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91-9810718141",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi"],
+  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

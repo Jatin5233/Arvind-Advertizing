@@ -342,8 +342,8 @@ export default function ContactSection() {
                 Icon:  MapPin,
                 title: "Visit Us",
                 lines: [
-                  "A1 22-A, Pusta Road, NH-709",
-                  "Pillar No-157, Bhajanpura",
+                  "First Floor, A-1/22",
+                  "Khajoori, Pushta Road",
                   "Delhi – 110053",
                 ],
                 href:  null,

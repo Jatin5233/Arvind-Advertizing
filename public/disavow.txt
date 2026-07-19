@@ -30,3 +30,9 @@
 # domain:da50-pa40-premium-pbn.info
 
 # --- TOXIC REFERRING DOMAINS (PASTE SEMRUSH DISAVOW EXPORT BELOW) ---
+domain:www.getonline.co.in
+domain:getonline.co.in
+domain:mail.runningwebsites.net
+domain:mail.blacksonwhites.com
+domain:mlbroeklikemlbroeklike.blogspot.com
+domain:mail.allwebsitesdirectory.com

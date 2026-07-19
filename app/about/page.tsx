@@ -58,6 +58,18 @@ const organizationSchema = {
     postalCode: "110053",
     addressCountry: "IN",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 28.702073,
+    longitude: 77.256074,
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91-9810718141",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi"],
+  },
   sameAs: [
     "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",

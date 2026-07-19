@@ -133,7 +133,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={15} className="text-brand-orange mt-0.5 shrink-0" />
                 <span className="text-white/50 text-sm">
-                  A1 22-A, Pusta Road, NH-709 Pillar No-157, Bhajanpura, Delhi-110053
+                  First Floor, A-1/22, Khajoori, Pushta Road, Delhi - 110053
                 </span>
               </li>
             </ul>
