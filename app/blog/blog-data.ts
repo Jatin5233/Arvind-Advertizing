@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "uv-printing-vs-digital-printing-which-is-better",
     title: "UV Printing vs Digital Printing: Which is Better for Your Business?",
-    excerpt: "Understanding the key differences between UV printing and digital printing to help you choose the right method for your project — from surface compatibility to cost-effectiveness.",
+    excerpt: "Compare UV printing and digital printing: learn the differences in surfaces, resolution, costs, and durability to choose the best method for your project.",
     content: `## What is UV Printing?
 
 UV printing uses ultraviolet light to cure (dry) specially formulated inks directly on the surface being printed. Unlike conventional printing methods, UV printing can print on virtually any flat surface — acrylic, wood, glass, metal, PVC, leather, and more.
@@ -80,7 +80,7 @@ At **Arvind Advertizing**, we operate both UV and digital printing in-house, so 
   {
     slug: "how-to-choose-right-sign-board-for-your-shop",
     title: "How to Choose the Right Sign Board for Your Shop in 2026",
-    excerpt: "A complete guide to selecting the perfect sign board for your retail store, restaurant, or office — covering LED glow signs, ACP boards, acrylic letters, neon-flex, and more.",
+    excerpt: "A complete guide to selecting the perfect sign board for your retail store or restaurant, covering LED glow signs, ACP boards, acrylic letters, and neon-flex.",
     content: `## Why Your Sign Board Matters
 
 Your sign board is your business's first impression. It's the first thing customers see, and it works 24/7 to attract foot traffic and build brand recognition. A well-designed sign board can increase walk-in customers by up to 50%.
@@ -153,7 +153,7 @@ We've fabricated and installed 2500+ sign boards across Delhi and India. Our in-
   {
     slug: "flex-printing-guide-materials-sizes-costs-delhi",
     title: "Flex Printing in Delhi: Complete Guide to Materials, Sizes & Costs (2026)",
-    excerpt: "Everything you need to know about flex banner printing in Delhi — types of flex material, standard sizes, printing technology, costs, and how to get the best results for outdoor advertising.",
+    excerpt: "Complete guide to flex banner printing in Delhi: materials (Star & Taiwan flex), standard sizes, printing technology, costs, and outdoor advertising tips.",
     content: `## What is Flex Printing?
 
 Flex printing is a large-format printing process used to create banners, hoardings, and signage for outdoor and indoor advertising. It involves printing high-resolution graphics on flexible PVC material using solvent, eco-solvent, or latex ink technology.
@@ -238,7 +238,7 @@ We handle flex printing orders of any size — from a single shop banner to 10,0
   {
     slug: "event-branding-checklist-corporate-exhibitions",
     title: "Event Branding Checklist: Everything You Need for Corporate Events & Exhibitions",
-    excerpt: "A step-by-step checklist for branding corporate events, trade shows, and exhibitions — from stage backdrops and stalls to directional signage and promotional materials.",
+    excerpt: "Step-by-step checklist for branding corporate events and exhibitions, from stage backdrops and stalls to directional signage and promotional materials.",
     content: `## Why Event Branding Matters
 
 Consistent, professional branding at events creates lasting impressions and drives business leads. Studies show that well-branded exhibition stalls generate 3x more visitor engagement than generic setups.
@@ -324,7 +324,7 @@ We've managed branding for 500+ events across India, from intimate product launc
   {
     slug: "why-corporate-branding-is-important-for-retail-chains",
     title: "Why Consistent Corporate Branding is Critical for Retail Chains in India",
-    excerpt: "How uniform branding across all retail outlets builds customer trust, increases foot traffic, and strengthens your brand identity — with real examples from franchise rollouts across India.",
+    excerpt: "Learn how consistent branding across retail outlets builds customer trust, increases foot traffic, and strengthens your brand identity in India.",
     content: `## The Power of Consistent Branding
 
 When a customer walks into any Starbucks, McDonald's, or Titan showroom — anywhere in the world — they instantly recognize the brand. The colors, signage, wall graphics, and spatial design are identical. This consistency is not accidental — it's the result of meticulous corporate branding execution.

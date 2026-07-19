@@ -5,7 +5,7 @@ import { Zap, Maximize, Settings, Award, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: { absolute: "Industrial Printing Machinery Delhi | Arvind Advertizing" },
-  description: "Advanced industrial printing equipment at Arvind Advertizing Delhi: UV flatbed printers, StarFire solvent printers, HP Latex, Konica Minolta digital press, eco-solvent, CNC plotter & thermal lamination machines.",
+  description: "Explore advanced printing machinery at Arvind Advertizing Delhi: UV flatbed printers, Starfire solvent, HP Latex & Konica digital presses.",
   keywords: [
     "DOCAN H1000 UV Flatbed Printer Delhi",
     "StarFire Solvent Printer Delhi",

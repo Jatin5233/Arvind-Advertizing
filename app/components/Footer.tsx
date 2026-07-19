@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, MessageCircle, Star } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Star, Facebook, Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
 
 const SERVICES = [
   { label: "Flex Printing", href: "/services/flex-printing" },
@@ -53,6 +53,31 @@ export default function Footer() {
       Icon: Star,
       href: "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
       label: "Arvind Advertizing on JustDial",
+    },
+    {
+      Icon: Facebook,
+      href: "https://www.facebook.com/arvindadvertizing",
+      label: "Arvind Advertizing on Facebook",
+    },
+    {
+      Icon: Twitter,
+      href: "https://x.com/arvindadv",
+      label: "Arvind Advertizing on X",
+    },
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/arvindadvertizing",
+      label: "Arvind Advertizing on Instagram",
+    },
+    {
+      Icon: Youtube,
+      href: "https://www.youtube.com/@arvindadvertizing",
+      label: "Arvind Advertizing on YouTube",
+    },
+    {
+      Icon: Linkedin,
+      href: "https://www.linkedin.com/company/arvind-advertizing",
+      label: "Arvind Advertizing on LinkedIn",
     },
   ].map(({ Icon, href, label }, i) => (
     <a

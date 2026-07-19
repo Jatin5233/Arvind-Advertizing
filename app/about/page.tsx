@@ -6,7 +6,7 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: { absolute: "About Arvind Advertizing – Printing Company Delhi | Arvind Advertising" },
-  description: "Arvind Advertizing has 15+ years of printing & branding expertise, 2500+ projects completed, 800+ happy clients across 120+ cities in India. Learn about our journey, team & advanced production facility.",
+  description: "Arvind Advertizing has 15+ years of printing & branding expertise. 2500+ projects completed across 120+ cities in India. Learn about our history and facility.",
   keywords: [
     "About Arvind Advertizing",
     "Arvind Advertising Delhi",
@@ -30,51 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://www.arvindadvertizing.com/#organization",
-  name: "ARVIND ADVERTISING",
-  alternateName: ["Arvind Advertizing", "Arvind Advertising Delhi"],
-  url: "https://www.arvindadvertizing.com",
-  logo: "https://www.arvindadvertizing.com/icon.png",
-  description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
-  foundingDate: "2011",
-  founder: {
-    "@type": "Person",
-    name: "Mr. Arvind",
-    jobTitle: "Founder & Director",
-  },
-  numberOfEmployees: {
-    "@type": "QuantitativeValue",
-    minValue: 10,
-    maxValue: 50,
-  },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "First Floor, A-1/22, Khajoori, Pushta Road",
-    addressLocality: "Delhi",
-    addressRegion: "Delhi",
-    postalCode: "110053",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 28.702073,
-    longitude: 77.256074,
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+91-9810718141",
-    contactType: "customer service",
-    areaServed: "IN",
-    availableLanguage: ["English", "Hindi"],
-  },
-  sameAs: [
-    "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
-    "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
-  ],
-};
+
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -110,7 +66,6 @@ const TEAM = [
 export default function AboutPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="relative py-36 bg-brand-charcoal overflow-hidden">

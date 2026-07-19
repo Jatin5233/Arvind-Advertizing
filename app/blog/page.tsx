@@ -7,7 +7,7 @@ import { ArrowRight, Clock, Calendar } from "lucide-react";
 export const metadata: Metadata = {
   title: { absolute: "Printing & Branding Blog Delhi | Arvind Advertizing Guides" },
   description:
-    "Delhi printing experts share guides on UV printing vs digital printing, how to choose sign boards, flex banner materials, costs & corporate identity tips from Arvind Advertizing.",
+    "Delhi printing experts share guides on UV vs digital printing, sign board selection, flex banner materials, costs & branding from Arvind Advertizing.",
   keywords: [
     "Printing & Branding Blog",
     "Flex Printing Guide Delhi",

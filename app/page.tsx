@@ -9,7 +9,7 @@ import ClientsMarquee from "./components/ClientsMarquee";
 
 export const metadata: Metadata = {
   title: { absolute: "Arvind Advertizing – Flex, UV & Sign Board Printing Delhi" },
-  description: "India's trusted printing partner for flex banners, UV printing, LED sign boards, event branding & corporate identity. 2500+ projects delivered. Get a free quote in 24 hours.",
+  description: "Delhi's trusted printing manufacturer for flex banners, UV printing, LED sign boards & event branding. 2500+ projects. Get a free quote in 24 hours.",
   alternates: { canonical: "https://www.arvindadvertizing.com" },
   openGraph: {
     type: "website",

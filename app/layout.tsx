@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Arvind Advertizing",
   },
   description:
-    "Arvind Advertizing is Delhi's leading printing & branding company. Industrial-scale flex printing, UV printing, sign boards, event branding & corporate identity solutions across India. Get a free quote today.",
+    "Arvind Advertizing is Delhi's leading printing & branding manufacturer. Flex banners, UV printing, LED sign boards & corporate identity. Get a free quote today.",
   keywords: [
     "Flex Printing Delhi",
     "UV Printing Delhi",
@@ -175,9 +175,19 @@ const localBusinessSchema = {
     },
     geoRadius: "50000",
   },
+  parentOrganization: {
+    "@type": "Organization",
+    "@id": "https://www.arvindadvertizing.com/#organization",
+    name: "ARVIND ADVERTISING",
+  },
   sameAs: [
     "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
     "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
+    "https://www.facebook.com/arvindadvertizing",
+    "https://x.com/arvindadv",
+    "https://www.instagram.com/arvindadvertizing",
+    "https://www.youtube.com/@arvindadvertizing",
+    "https://www.linkedin.com/company/arvind-advertizing",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
@@ -249,6 +259,62 @@ const localBusinessSchema = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.arvindadvertizing.com/#organization",
+  name: "ARVIND ADVERTISING",
+  alternateName: ["Arvind Advertizing", "Arvind Advertising Delhi"],
+  url: "https://www.arvindadvertizing.com",
+  logo: "https://www.arvindadvertizing.com/icon.png",
+  description: "Delhi's leading printing and branding manufacturing company with 15+ years of expertise.",
+  foundingDate: "2011",
+  founder: {
+    "@type": "Person",
+    name: "Mr. Arvind",
+    jobTitle: "Founder & Director",
+  },
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    minValue: 10,
+    maxValue: 50,
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "First Floor, A-1/22, Khajoori, Pushta Road",
+    addressLocality: "Delhi",
+    addressRegion: "Delhi",
+    postalCode: "110053",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 28.702073,
+    longitude: 77.256074,
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91-9810718141",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi"],
+  },
+  subOrganization: {
+    "@type": "LocalBusiness",
+    "@id": "https://www.arvindadvertizing.com/#business",
+    name: "ARVIND ADVERTISING",
+  },
+  sameAs: [
+    "https://www.justdial.com/Delhi/Arvind-Advertizing-Near-Aggarwal-Sweets-Bhajan-Pura/011PXX11-XX11-150511170625-W8P4_BZDET",
+    "https://www.google.com/maps/place/ARVIND+ADVERTIZING/@28.7020777,77.2534991,17z",
+    "https://www.facebook.com/arvindadvertizing",
+    "https://x.com/arvindadv",
+    "https://www.instagram.com/arvindadvertizing",
+    "https://www.youtube.com/@arvindadvertizing",
+    "https://www.linkedin.com/company/arvind-advertizing",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -261,6 +327,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
           }}
         />
       </head>

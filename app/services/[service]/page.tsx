@@ -16,7 +16,7 @@ export async function generateMetadata(
   if (!svc) return {};
 
   const title = `${svc.title} Services Delhi NCR & India | Arvind Advertizing`;
-  const description = `${svc.shortDesc} Trusted by 800+ clients across India. Get a free quote & best prices for ${svc.title.toLowerCase()} in Delhi from Arvind Advertizing.`;
+  const description = `Get best prices for ${svc.title.toLowerCase()} in Delhi NCR. ${svc.shortDesc}`;
 
   return {
     title: { absolute: title },

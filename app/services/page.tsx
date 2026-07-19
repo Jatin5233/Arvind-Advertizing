@@ -3,7 +3,7 @@ import ServicesClient from "./ServicesClient";
 
 export const metadata: Metadata = {
   title: { absolute: "Printing & Branding Services Delhi NCR & India | Arvind Advertizing" },
-  description: "Explore Arvind Advertizing's complete printing & branding services: flex printing, UV printing, sign board fabrication, event branding, digital paper printing & corporate branding across India.",
+  description: "Explore Arvind Advertizing's printing & branding services: flex banners, UV printing, sign boards, event branding & corporate identity. Get a quote today.",
   keywords: [
     "Printing Services Delhi",
     "Branding Services Delhi",
